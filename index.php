@@ -1,104 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jual Server Minecraft</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🔰RIZKY APP STORE🔰</title>
   <style>
-    #map {
-      height: 400px;
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
+      overflow-x: hidden;
+      color: white;
+      background: transparent;
+    }
+
+    video.video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      text-align: center;
+      background: none;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto 10px auto;
+    }
+
+    h1, p, .price-section h2 {
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 10px 0 20px 0;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 20px;
+      width: 90%;
+      max-width: 300px;
+      background-color: rgba(255,255,255,0.3);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: rgba(255,255,255,0.5);
+    }
+
+    .price-section {
+      margin-top: 30px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .price-section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .price-table {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .price-table th, .price-table td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    .price-table tr:nth-child(even) {
+      background-color: rgba(255,255,255,0.1);
+    }
+
+    @media screen and (max-width: 400px) {
+      h1 { font-size: 20px; }
+      p, .btn, .price-table td, .price-table th { font-size: 14px; }
     }
   </style>
 </head>
 <body>
-  <div class="container py-5">
-    <h1 class="text-center">Jual Server Minecraft</h1>
-    <p class="text-center">Pilih paket server sesuai kebutuhanmu!</p>
 
-    <div class="row text-center my-4">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Paket Basic</h5>
-            <p class="card-text">1GB RAM - 10 Slot</p>
-            <p class="card-text">Rp 15.000 / bulan</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Paket Medium</h5>
-            <p class="card-text">2GB RAM - 20 Slot</p>
-            <p class="card-text">Rp 30.000 / bulan</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Paket Pro</h5>
-            <p class="card-text">4GB RAM - 50 Slot</p>
-            <p class="card-text">Rp 60.000 / bulan</p>
-          </div>
-        </div>
-      </div>
+  <video class="video-bg" autoplay loop playsinline id="bgVideo">
+    <source src="https://b.top4top.io/m_3426wybrh0.mp4" type="video/mp4" />
+    Browser Anda tidak mendukung video.
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="content">
+    <img src="https://b.top4top.io/p_3426payab0.jpg" alt="Logo" class="logo" />
+    <h1>🔰RIZKY APP STORE🔰</h1>
+
+    <p>Rizky app store tempat menjual server Minecraft terpercaya</p>
+
+    <a href="https://wa.me/6283850540570" class="btn">Hubungi Admin</a>
+    <a href="https://chat.whatsapp.com/J58JyghbGTEDulAXrUlRyh" class="btn">Masuk Grup WhatsApp</a>
+
+    <div class="price-section">
+      <h2>Harga Panel</h2>
+      <table class="price-table">
+        <tr><th>Jenis</th><th>Harga</th></tr>
+        <tr><td>server Minecraft 1GB</td><td>Rp2.000</td></tr>
+        <tr><td>server Minecraft 2GB</td><td>Rp3.000</td></tr>
+        <tr><td>server Minecraft 4GB</td><td>Rp5.000</td></tr>
+        <tr><td>server Minecraft 5GB</td><td>Rp6.000</td></tr>
+        <tr><td>server Minecraft 6GB</td><td>Rp7.000</td></tr>
+        <tr><td>server Minecraft 7GB</td><td>Rp8.000</td></tr>
+        <tr><td>server Minecraft 8GB</td><td>Rp9.000</td></tr>
+        <tr><td>server Minecraft 9GB</td><td>Rp10.000</td></tr>
+        <tr><td>server Minecraft 10GB</td><td>Rp11.000</td></tr>
+      </table>
+
+      <h2 style="margin-top:20px;">🔰Harga server Minecraft🔰</h2>
+      <table class="price-table">
+        <tr><th>Paket</th><th>Harga</th></tr>
+        <tr><td>Server Personal</td><td>Rp 15.000</td></tr>
+        <tr><td>Server Premium</td><td>Rp 30.000</td></tr>
+        <tr><td>Server Unlimited + Panel</td><td>Rp 60.000</td></tr>
+      </table>
     </div>
-
-    <h3 class="mt-5">Formulir Pemesanan</h3>
-    <form id="waForm">
-      <div class="mb-3">
-        <label for="nama" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="nama" required>
-      </div>
-      <div class="mb-3">
-        <label for="kontak" class="form-label">Kontak (WhatsApp)</label>
-        <input type="text" class="form-control" id="kontak" required>
-      </div>
-      <div class="mb-3">
-        <label for="paket" class="form-label">Pilih Paket</label>
-        <select id="paket" class="form-control" required>
-          <option value="Basic">Basic - Rp 15.000</option>
-          <option value="Medium">Medium - Rp 30.000</option>
-          <option value="Pro">Pro - Rp 60.000</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-success">Kirim ke WhatsApp</button>
-    </form>
-
-    <h3 class="mt-5">Peta Lokasi Server</h3>
-    <div id="map"></div>
   </div>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script>
-    var map = L.map('map').setView([-6.200000, 106.816666], 5);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([-6.200000, 106.816666]).addTo(map)
-      .bindPopup('Lokasi Pusat Server')
-      .openPopup();
-  </script>
-
-  <script>
-    document.getElementById('waForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var nama = document.getElementById('nama').value;
-      var kontak = document.getElementById('kontak').value;
-      var paket = document.getElementById('paket').value;
-      var pesan = `Halo, saya ingin pesan server Minecraft:
-Nama: ${nama}
-Kontak: ${kontak}
-Paket: ${paket}`;
-      var nomorAdmin = '6281234567890'; // Ganti dengan nomor WA kamu
-      window.open(`https://wa.me/${nomorAdmin}?text=${encodeURIComponent(pesan)}`, '_blank');
+    // Aktifkan suara video (user harus interaksi dulu agar suara dimulai di browser modern)
+    document.addEventListener("click", function () {
+      const video = document.getElementById("bgVideo");
+      video.muted = false;
+      video.play();
     });
   </script>
+
 </body>
 </html>
